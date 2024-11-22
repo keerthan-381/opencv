@@ -7,10 +7,10 @@ import os
 from io import BytesIO
 
 # Configure pytesseract path
-pytesseract.pytesseract.tesseract_cmd = r"C:\Users\e430388\AppData\Local\Programs\Tesseract-OCR\tesseract.exe"
+pytesseract.pytesseract.tesseract_cmd = r"tesseract.exe"
 
 # Load the face detection cascade
-face_cascade = cv2.CascadeClassifier(r'C:\Users\e430388\Downloads\Vs Code\cv\cascade_frontface_default.xml')
+face_cascade = cv2.CascadeClassifier(r'cascade_frontface_default.xml')
 
 def extract_text_from_image(image):
     """Extract text from image using pytesseract."""
